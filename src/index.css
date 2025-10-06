@@ -128,4 +128,20 @@ All colors MUST be HSL.
   .gradient-card {
     background: var(--gradient-card);
   }
+  
+  /* Performance optimizations for animations */
+  img {
+    will-change: transform;
+    contain: layout;
+  }
+  
+  /* Optimize scroll behavior */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* GPU acceleration for transforms */
+  .hover\:scale-110:hover {
+    transform: scale(1.1) translateZ(0);
+  }
 }
