@@ -86,6 +86,9 @@ const Offers = () => {
                 <img 
                   src={offer.image} 
                   alt={offer.title}
+                  loading="lazy"
+                  width="800"
+                  height="380"
                   className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
