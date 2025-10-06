@@ -1,4 +1,4 @@
-import { Phone, Mail, MapPin, Send } from "lucide-react";
+import { Phone, Mail, MapPin, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 
@@ -59,51 +59,31 @@ const Contact = () => {
         </div>
 
         <Card className="max-w-2xl mx-auto p-8 shadow-lg">
-          <h3 className="text-2xl font-bold text-foreground mb-6 text-center">
-            أرسل لنا رسالة
-          </h3>
-          <form className="space-y-4">
-            <div>
-              <label className="block text-foreground mb-2 font-semibold">الاسم</label>
-              <input 
-                type="text" 
-                className="w-full p-3 rounded-lg border border-input bg-background text-foreground focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
-                placeholder="أدخل اسمك"
-              />
+          <div className="text-center">
+            <div className="w-24 h-24 mx-auto mb-6 rounded-full bg-gradient-to-br from-[#25D366] to-[#128C7E] flex items-center justify-center animate-pulse">
+              <MessageCircle className="w-12 h-12 text-white" />
             </div>
-            <div>
-              <label className="block text-foreground mb-2 font-semibold">رقم الهاتف</label>
-              <input 
-                type="tel" 
-                className="w-full p-3 rounded-lg border border-input bg-background text-foreground focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
-                placeholder="أدخل رقم هاتفك"
-              />
-            </div>
-            <div>
-              <label className="block text-foreground mb-2 font-semibold">البريد الإلكتروني</label>
-              <input 
-                type="email" 
-                className="w-full p-3 rounded-lg border border-input bg-background text-foreground focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
-                placeholder="أدخل بريدك الإلكتروني"
-              />
-            </div>
-            <div>
-              <label className="block text-foreground mb-2 font-semibold">الرسالة</label>
-              <textarea 
-                rows={4}
-                className="w-full p-3 rounded-lg border border-input bg-background text-foreground focus:ring-2 focus:ring-primary focus:border-transparent transition-all resize-none"
-                placeholder="اكتب رسالتك هنا..."
-              ></textarea>
-            </div>
-            <Button 
-              type="submit"
-              className="w-full bg-primary hover:bg-primary/90 text-white"
-              size="lg"
+            <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
+              تواصل معنا عبر واتساب
+            </h3>
+            <p className="text-muted-foreground mb-8 text-lg">
+              راسلنا مباشرة للحجز والاستفسارات
+            </p>
+            <a
+              href="https://wa.me/9647701234567?text=مرحباً، أود الاستفسار عن خدمات التخييم"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block"
             >
-              <Send className="ml-2 h-5 w-5" />
-              إرسال الرسالة
-            </Button>
-          </form>
+              <Button 
+                className="bg-[#25D366] hover:bg-[#128C7E] text-white text-lg px-12 py-6 shadow-xl hover:shadow-2xl transition-all"
+                size="lg"
+              >
+                <MessageCircle className="ml-2 h-6 w-6" />
+                افتح واتساب
+              </Button>
+            </a>
+          </div>
         </Card>
       </div>
     </section>
