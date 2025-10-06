@@ -70,7 +70,7 @@ const Contact = () => {
               راسلنا مباشرة للحجز والاستفسارات
             </p>
             <a
-              href="https://wa.me/9647701234567?text=مرحباً، أود الاستفسار عن خدمات التخييم"
+              href="https://wa.me/9647828200600?text=مرحباً، أود الاستفسار عن خدمات التخييم"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block"
